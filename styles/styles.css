@@ -17,10 +17,6 @@ img {
     box-shadow: 0 0 30px gray;
 }
 
-p {
-    padding: 0px;
-}
-
 main {
     max-width: 840px;
 }
@@ -28,6 +24,10 @@ main {
 main img {
     width: 150px;
     height: auto;
+}
+
+p {
+    padding: 0px;
 }
 
 aside {
