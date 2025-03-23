@@ -1,0 +1,101 @@
+.header-with-bg {
+    position: relative; 
+    background: url('../images/rafting60_1024.jpeg') no-repeat center center;
+    background-size: cover; 
+    height: 300px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem;
+}
+
+.logo {
+    max-height: 100px; 
+}
+
+.hero {
+    position: relative; 
+    height: 400px; 
+    background: url('../images/rafting60_1024.jpeg') no-repeat center center;
+    background-size: cover; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.hero h1 {
+    background-color: #DF8453;
+    color: white; 
+    font-size: 3rem; 
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+}
+
+
+.rafting14_600 jpeg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+p {
+    background-color: #f5f5DC;
+    color: #1F1F1F;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    position: absolute;
+}
+
+article {
+    position: relative; 
+    z-index: 1; 
+}
+
+
+article img {
+    float: right; 
+    margin-left: 1rem; 
+    max-width: 50%; 
+    height: auto; 
+}
+
+.sociallinks a img {
+    width: 32px; 
+    height: 32px;
+    margin: 0 0.5rem;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    article {
+        flex-direction: column;
+    }
+} 
+
