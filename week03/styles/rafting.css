@@ -32,6 +32,9 @@
     top: 20px;
 }
 
+.nav-container {
+    margin-left: 1000px;          
+}
 
 .rafting14_600 jpeg {
     display: block;
@@ -45,11 +48,8 @@ p {
 }
 
 a {
+    margin-right: 20px;
     text-decoration: none;
-}
-
-h1 {
-    position: absolute;
 }
 
 article {
