@@ -1,18 +1,40 @@
-.header-with-bg {
-    position: relative; 
-    background: url('../images/rafting60_1024.jpeg') no-repeat center center;
-    background-size: cover; 
-    height: 300px; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+/* Contain-1 Section */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
     padding: 1rem;
+    background-color: #f5f5DC;
 }
 
+/* Logo Styling */
 .logo {
     max-height: 100px; 
 }
 
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    gap: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: thin #1F1F1F solid;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1F1F1F;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0088cc;
+}
+
+/* Container-2 Section */
 .hero {
     position: relative; 
     height: 400px; 
@@ -21,80 +43,113 @@
     display: flex; 
     justify-content: center; 
     align-items: center; 
+    text-align: center;
 }
 
 .hero h1 {
     color: white; 
     font-size: 3rem; 
-    z-index: 10;
     position: absolute;
     top: 20px;
+    justify-content: center;
 }
 
-.nav-container {
-    margin-left: 1000px;          
-}
-
-.rafting14_600 jpeg {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-p {
-    background-color: #f5f5DC;
-    color: #1F1F1F;
-}
-
-a {
-    margin-right: 20px;
-    text-decoration: none;
-}
-
+/* Article Section */
 article {
-    position: relative; 
-    z-index: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #f5f5DC;
+    padding: 1rem;
+    border-radius: 8px;
 }
-
 
 article img {
-    float: right; 
-    margin-left: 1rem; 
     max-width: 50%; 
     height: auto; 
+}
+
+/* Container-3 Section */
+.history {
+    background-color: #f5f5DC;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Container-4 Section */
+
+.adventures {
+    background-color: #f5f5DC;  
+
+    justify-content: space-between;
+    border: thin #c0c0c0 solid;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.adventures div {
+    margin: 10;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.adventures img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+figcaption {
+    text-align: justify;
+    margin-top: auto;
+    font-weight: bold;
+    border: #1F1F1F solid;
+}
+
+/* Container-5 Section */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1F1F1F;
+    color: #ffffff;
 }
 
 .sociallinks a img {
     width: 32px; 
     height: 32px;
     margin: 0 0.5rem;
+    
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         text-align: center;
     }
 
-    nav a {
-        display: block;
-        margin: 0.5rem 0;
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        height: 300px;
     }
 
     article {
         flex-direction: column;
     }
-} 
 
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
