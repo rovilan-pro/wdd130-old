@@ -1,4 +1,5 @@
-/* Contain-1 Section */
+/* About.html */
+/* Header Section */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -34,7 +35,7 @@ nav a:hover {
     color: #0088cc;
 }
 
-/* Container-2 Section */
+/* hero Section */
 .hero {
     position: relative; 
     height: 400px; 
@@ -70,7 +71,7 @@ article img {
     height: auto; 
 }
 
-/* Container-3 Section */
+/* History Section */
 .history {
     background-color: #f5f5DC;
     padding: 2rem;
@@ -81,11 +82,9 @@ h2 {
     text-align: center;
 }
 
-/* Container-4 Section */
-
+/* Adventure Section */
 .adventures {
     background-color: #f5f5DC;  
-
     justify-content: space-between;
     border: thin #c0c0c0 solid;
     gap: 1rem;
@@ -111,7 +110,7 @@ figcaption {
     border: #1F1F1F solid;
 }
 
-/* Container-5 Section */
+/* Footer Section */
 footer {
     display: flex;
     justify-content: space-between;
@@ -152,4 +151,73 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+}
+
+/* Contact.html */
+
+/* Team Section */
+.team {
+  background-color: #f5f5DC;
+  padding: 2rem;
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.team-members figure {
+  width: 200px;
+  margin: 0;
+  text-align: center;
+}
+
+.team-members img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.team-members img:hover {
+  transform: scale(1.05);
+}
+
+.team-members figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+.team-members img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-members figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Contact Info Section */
+.contact-info {
+  text-align: center;
+}
+
+/* Google Map Section */
+.map iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  border: 0;
 }
