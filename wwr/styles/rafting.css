@@ -385,7 +385,7 @@ footer {
     border-radius: 6px;
 }
 
-.trip figcaption {
+.trip p {
     text-align: justify;
     margin-top: auto;
     font-weight: bold;
