@@ -92,7 +92,7 @@ h2 {
 }
 
 .adventures div {
-    margin: 10;
+    margin: 10px;
     display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
@@ -154,7 +154,6 @@ footer {
 }
 
 /* Contact.html */
-
 /* Team Section */
 .team {
   background-color: #f5f5DC;
@@ -210,8 +209,9 @@ footer {
 }
 
 /* Contact Info Section */
-.contact-info {
+.contact-info { 
   text-align: center;
+  background-color: #f5f5DC;
 }
 
 /* Google Map Section */
@@ -220,4 +220,192 @@ footer {
   max-width: 600px;
   height: 450px;
   border: 0;
+}
+
+.map {
+    background-color: #e0f7fa;
+}
+
+/* index.html */
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 400px;
+    background: url('../images/rafting60_1024.jpeg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-text {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+  }
+  
+  /* Call to Action Section */
+  .cta {
+    text-align: center;
+    padding: 2rem;
+    background-color: #e0f7fa;
+  }
+  
+  .cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0088cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta .btn:hover {
+    background-color: #005f8c;
+  }
+  
+  /* Description Layout Section */
+  .description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #f5f5DC;
+    border: thin #c0c0c0 solid;
+  }
+  
+  .description-item {
+    background-color: #e0f7fa;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem; 
+  }
+  
+  .description-item img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #333;
+  }  
+  
+  /* Newsletter Form Section */
+  .contact-form {
+    background-color: #e0f7fa;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .contact-form form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .contact-form button {
+    padding: 0.75rem;
+    background-color: #0088cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #005f8c;
+  }
+
+/* trips.html */
+.trips {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+    background-color: beige;
+}
+
+.trip {
+    flex: 1;
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 6px;
+}
+
+.trip figcaption {
+    text-align: justify;
+    margin-top: auto;
+    font-weight: bold;
+    border: #1F1F1F solid;
+    text-align: center;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+.trips-table th, .trips-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: beige;
+}
+
+.trips-table th {
+    background-color: #e0f7fa;
 }
