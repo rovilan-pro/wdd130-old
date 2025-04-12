@@ -373,6 +373,13 @@ footer {
     background-color: beige;
 }
 
+.trips h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
 .trip {
     flex: 1;
     text-align: center;
